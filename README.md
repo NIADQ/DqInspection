@@ -1,8 +1,8 @@
-# [제공표준 파일진단 사전 점검 프로그램]
+# [공공데이터포털 표준데이터셋 사전 점검 프로그램]
 
-> 사전 점검 프로그램은 JavaFX와 Java 11버전을 사용했습니다.
+> 사전 점검 프로그램은 JavaFX와 Java 11버전을 사용하여 개발했습니다.
 
-공공데이터 포털(https://www.data.go.kr/)의 표준데이터셋 검증을 위한 프로로젝트로 JavaFX(https://openjfx.io/)를 이용하여 디자인 되었습니다.
+공공데이터포털(https://www.data.go.kr/)의 표준데이터셋 검증을 위한 프로로젝트로 JavaFX(https://openjfx.io/)를 이용하여 디자인 되었습니다.
 
 ![](public/Dashboard.PNG)
 ## :rocket: 시작하기
