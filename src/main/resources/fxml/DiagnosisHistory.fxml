@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.wisefile.controller.DiagnosisHistoryController">
+   <children>
+       <BorderPane layoutX="-165.0" layoutY="-165.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+       <bottom>
+           <ButtonBar prefHeight="30.0" BorderPane.alignment="CENTER">
+               <buttons>
+                   <Button fx:id="btnClose" mnemonicParsing="false" onAction="#btnCloseClick" text="창닫기"/>
+               </buttons>
+           </ButtonBar>
+       </bottom>
+       <center>
+            <TableView fx:id="tvFileList" prefHeight="600.0" prefWidth="480.0" BorderPane.alignment="CENTER" stylesheets="@../css/application.css">
+              <columns>
+                  <TableColumn fx:id="historyId" visible="false" />
+                  <TableColumn fx:id="createdAt" prefWidth="300.0" text="진단일시" />
+                  <TableColumn fx:id="buttonDel" prefWidth="170.0" text="삭제" />
+              </columns>
+            </TableView>
+       </center>
+       </BorderPane>
+   </children>
+</AnchorPane>

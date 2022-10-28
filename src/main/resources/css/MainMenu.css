@@ -1,0 +1,21 @@
+#btnOrgSelect{
+-fx-color:black;
+-fx-font-family: NanumGothic ;
+-fx-font-size:14px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#btnFullInspect{
+-fx-color:black;
+-fx-font-family: NanumGothic;
+-fx-font-size:14px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#btnConfiguration{
+-fx-color:black;
+-fx-font-family: NanumGothic;
+-fx-font-size:14px;  
+-fx-background-radius: 5px;
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+}

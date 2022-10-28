@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="569.0" prefWidth="939.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.wisefile.controller.DiagnosisRepairResultController">
+   <children>
+      <BorderPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <ButtonBar prefHeight="30.0" BorderPane.alignment="CENTER">
+               <buttons>
+                  <Button fx:id="excelBtn" mnemonicParsing="false" onAction="#excelDown" text="진단결과 다운로드" />
+                  <Button fx:id="diagResultBtn" mnemonicParsing="false" onAction="#goDiagResultPage" text="진단결과" />
+                  <Button fx:id="diagHistoryBtn" mnemonicParsing="false" onAction="#goDiagHistoryPage" text="진단이력" />
+                  <Button fx:id="fixBtn" mnemonicParsing="false" onAction="#fixEvent" text="정비" />
+               </buttons>
+            </ButtonBar>
+         </bottom>
+         <center>
+            <TableView fx:id="repairResultTable" editable="true" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="75.0" text="" visible="false" />
+                  <TableColumn fx:id="histId" prefWidth="75.0" text="" visible="false" />
+                  <TableColumn fx:id="fileId" prefWidth="75.0" text="" visible="false" />
+                  <TableColumn fx:id="columnIndx" prefWidth="75.0" text="" visible="false" />
+               	  <TableColumn fx:id="fileSelect" prefWidth="36.79995805025101" text="선택" />
+               	  <TableColumn fx:id="rowNum" editable="false" prefWidth="50" sortable="false" text="행번"/>
+                  <TableColumn fx:id="dataSet" editable="false" prefWidth="119.19997864961624" sortable="false" text="데이터셋" />
+                  <TableColumn fx:id="colNm" editable="false" prefWidth="114.39999389648438" sortable="false" text="컬럼명" />
+                  <TableColumn fx:id="ruleSet" editable="false" minWidth="0.0" prefWidth="122.39997863769531" sortable="false" text="룰셋" />
+                  <TableColumn fx:id="orgData" editable="true" prefWidth="170.0" sortable="false" text="원본 값" />
+                  <TableColumn fx:id="fixedData" editable="true" prefWidth="170.0" sortable="false" text="정비 값" />
+                  <TableColumn fx:id="errMsg" editable="false" prefWidth="160.79998779296875" sortable="false" text="정비 메시지" />
+                  <TableColumn fx:id="fixedYn" editable="false" minWidth="0.0" prefWidth="75.9998779296875" sortable="false" text="정비여부" />
+               </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

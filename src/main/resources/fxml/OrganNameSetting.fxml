@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.wisefile.controller.OrganNameSettionController">
+   <children>
+       <BorderPane layoutX="-165.0" layoutY="-165.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+       <bottom>
+           <ButtonBar prefHeight="30.0" BorderPane.alignment="CENTER">
+               <buttons>
+                   <Button fx:id="btnUpdateOrganName" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnUpdateOrganNameClick" text="저장" />
+               </buttons>
+           </ButtonBar>
+       </bottom>
+       <center>
+
+             <VBox fillWidth="true" prefHeight="130" BorderPane.alignment="CENTER">
+                 <HBox alignment="CENTER" fillHeight="true" prefHeight="60" prefWidth="540.0">
+                 <children>
+                   <HBox alignment="CENTER" fillHeight="true" prefHeight="60" prefWidth="150.0">
+                       <Label alignment="CENTER" prefHeight="35.0" prefWidth="138.0" text="기관명">
+                           <font>
+                               <Font name="NanumGothicExtraBold" size="14.0" />
+                           </font>
+                       </Label>
+                   </HBox>
+                   <HBox alignment="CENTER_LEFT" fillHeight="true" prefHeight="60" prefWidth="390.0">
+                       <TextField fx:id="organName" prefHeight="35" prefWidth="370" promptText="기관명을 입력하세요." />
+                   </HBox>
+                 </children>
+                 </HBox>
+
+                  <HBox alignment="CENTER" fillHeight="true" prefHeight="60" prefWidth="540.0">
+                       <children>
+                   <HBox alignment="CENTER" fillHeight="true" prefHeight="60" prefWidth="150.0">
+                       <Label alignment="CENTER" prefHeight="35.0" prefWidth="138.0" text="진단결과파일 경로">
+                           <font>
+                               <Font name="NanumGothicExtraBold" size="14.0" />
+                           </font>
+                       </Label>
+                   </HBox>
+                   <HBox alignment="CENTER_LEFT" fillHeight="true" prefHeight="60" prefWidth="390.0">
+                       <TextField fx:id="txtFilePath" prefHeight="35" prefWidth="370"/>
+                       <Button fx:id="filePathBtn" mnemonicParsing="false" onAction="#filePathBtnClick" text="선택" />
+                   </HBox>
+                    </children>
+                </HBox>
+              </VBox>
+       </center>
+   </BorderPane>
+   </children>
+ </AnchorPane>

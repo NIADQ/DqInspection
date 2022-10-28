@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.wisefile.controller.DiagnosisHistoryPopupController">
+   <children>
+      <BorderPane layoutX="-165.0" layoutY="-165.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <bottom>
+            <ButtonBar prefHeight="30.0" BorderPane.alignment="CENTER">
+              <buttons>
+                <Button fx:id="diagResultBtn" mnemonicParsing="false" onAction="#goDiagResultPage" text="진단 결과" />
+                  <Button fx:id="repairResultBtn" mnemonicParsing="false" onAction="#goRepairResultPage" text="정비 결과" />
+              </buttons>
+            </ButtonBar>
+         </bottom>
+         <center>
+            <TableView fx:id="diagHistoryTable" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="fileSelect" prefWidth="36.79995805025101" text="선택" />
+                  <TableColumn fx:id="dataSet" prefWidth="120.80004501342773" text="데이터셋" />
+                  <TableColumn fx:id="fileNm" prefWidth="83.99999237060547" text="파일명" />
+                  <TableColumn fx:id="fileType" minWidth="0.0" prefWidth="76.0" text="파일타입" />
+                  <TableColumn fx:id="proStat" prefWidth="145.59991455078125" text="처리현황" />
+                  <TableColumn fx:id="errYn" minWidth="0.0" prefWidth="65.5999755859375" text="오류여부" />
+                  <TableColumn fx:id="fixedFile" prefWidth="133.60006713867188" text="정비파일" />
+                  <TableColumn fx:id="historyId" editable="false" prefWidth="75.0" sortable="false" text="이력아이디" visible="false" />
+               </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

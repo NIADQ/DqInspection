@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="application.wisefile.dao.DiagnosisRepairResultDAO">
+
+	<select id="selectRepairResultList" parameterType="Map" resultType="Map">
+	 	SELECT 
+	 		 B.FILE_NAME    	   AS dataSet  /*데이터셋*/
+			,C.COLUMN_NAME  	   AS colNm    /*컬럼명*/
+			,C.COLUMN_UNIT  	   AS ruleSet  /*룰셋*/
+			,C.FIXED_MSG    	   AS fixedMsg /*정비 메시지*/
+			,A.ERROR_MSG           AS errMsg   /*오류 메시지*/
+			,A.ORIGIN       	   AS orgData  /*원본 값*/
+			,A.ROW_NUM			   AS rowNum   /*파일 로우*/
+			,A.FIXED        	   AS fixedData/*정비 값*/
+			,IFNULL(A.FIXED_YN,'') AS fixedYn  /*정비 여부*/
+			,A.ID                  AS id
+			,A.HISTORY_ID          AS histId
+			,A.FILE_ID             AS fileId
+			,'col'||C.COLUMN_IDX  AS columnIndx
+		FROM fixed_history A
+		INNER JOIN files B    ON A.file_id =B.file_id
+		INNER JOIN rule_set C ON( A.file_id = C.file_id AND A.rule_set_id = C.column_idx)
+		WHERE 1=1
+		AND A.HISTORY_ID = #{historyId} 
+	
+	</select>
+	
+	<update id="updateRepairData" parameterType="Map">
+			update fixed_history
+				set fixed    = #{fixedData}
+				   ,fixed_yn = 'Y'
+			WHERE 1=1
+			and id = #{id}	    				
+	</update>
+	
+	<update id="updateDiagnosisResult" parameterType="Map">
+			update diagnosis_result
+				set ${columnIndx}  = #{fixedData}
+			WHERE 1=1
+			and id 		  = #{id}
+			and file_id   = #{fileId}
+			and history_id = #{histId}	    				
+	</update>
+
+</mapper>

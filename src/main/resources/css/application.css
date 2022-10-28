@@ -1,0 +1,12 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+:flash-highlight{
+    -fx-font-size:25;
+}
+
+:mx-width{
+	-fx-pref-height:50;
+}
+
+.table-column{
+    -fx-alignment: baseline-center;
+}

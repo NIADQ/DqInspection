@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.wisefile.controller.DiagnosisDataSetSelectionController">
+   <children>
+       <BorderPane layoutX="-165.0" layoutY="-165.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+       <bottom>
+           <!--
+           <ButtonBar prefHeight="30.0" BorderPane.alignment="CENTER">
+               <buttons>
+                   <Button fx:id="btnSyncDataSet" alignment="CENTER" mnemonicParsing="false" onAction="#btnSyncDataSetClick" text="룰셋 동기화" />
+                   <Button fx:id="btnOrgNameSet" alignment="CENTER" mnemonicParsing="false" onAction="#btnOrgNameSetClick" text="기관설정" />
+
+                   <Button fx:id="btnHistoryView" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btnHistoryViewClick" text="이력조회"  />
+                   <Button fx:id="btnSelectNext" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#btnSelectNextClick" text="다음"  />
+               </buttons>
+           </ButtonBar>
+            -->
+           <HBox alignment="CENTER" fillHeight="true" prefHeight="30" prefWidth="980.0">
+               <children>
+                   <HBox alignment="CENTER_LEFT" fillHeight="true" prefHeight="30" prefWidth="390.0">
+                       <ButtonBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="30.0">
+                           <buttons>
+                               <Button fx:id="btnOrgNameSet" mnemonicParsing="false" onAction="#btnOrgNameSetClick" prefWidth="90.0" text="기관설정" />
+                               <Button fx:id="btnSyncDataSet" alignment="CENTER" mnemonicParsing="false" onAction="#btnSyncDataSetClick" prefWidth="90.0" text="룰셋 동기화" />
+                           </buttons>
+                       </ButtonBar>
+                   </HBox>
+                   <HBox alignment="CENTER" fillHeight="true" prefHeight="30" prefWidth="290.0">
+                        <Text fx:id="appVersion" >APP VERSION
+                        <font>
+                           <Font name="돋움체" size="14.0" />
+                        </font>
+                        </Text>
+                   </HBox>
+                   <HBox alignment="CENTER_RIGHT" fillHeight="true" prefHeight="30" prefWidth="390.0">
+                       <ButtonBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="200">
+                           <buttons>
+                               <Button fx:id="btnHistoryView" alignment="CENTER" mnemonicParsing="false" onAction="#btnHistoryViewClick" prefWidth="90.0" text="이력조회" />
+                               <Button fx:id="btnSelectNext" alignment="CENTER" mnemonicParsing="false" onAction="#btnSelectNextClick" prefWidth="90.0" text="다음" />
+                           </buttons>
+                       </ButtonBar>
+                   </HBox>
+               </children>
+           </HBox>
+       </bottom>
+       <center>
+           <HBox alignment="CENTER" fillHeight="true" prefHeight="660" prefWidth="980.0">
+               <children>
+                   <VBox fillWidth="true" prefHeight="-Infinity" stylesheets="@../css/application.css" BorderPane.alignment="CENTER">
+                               <TableView fx:id="tvFileList" prefHeight="660" BorderPane.alignment="CENTER">
+                                   <columns>
+                                       <TableColumn fx:id="fileId" visible="false" />
+                                       <TableColumn fx:id="seq" prefWidth="80.0" text="번호" />
+                                       <TableColumn fx:id="fileNm" prefWidth="180.0" text="제공표준 데이터셋 명" />
+                                       <TableColumn fx:id="offerOrganName" prefWidth="200.0" text="제공기관" />
+                                       <TableColumn fx:id="fileSelect" prefWidth="80.0" text="선택" />
+                                   </columns>
+                               </TableView>
+                   </VBox>
+                   <VBox fillWidth="true" prefHeight="-Infinity" stylesheets="@../css/application.css" BorderPane.alignment="CENTER">
+                               <TableView fx:id="tvFileList2" prefHeight="660" BorderPane.alignment="CENTER">
+                                   <columns>
+                                       <TableColumn fx:id="fileId2" visible="false" />
+                                       <TableColumn fx:id="seq2" prefWidth="80.0" text="번호" />
+                                       <TableColumn fx:id="fileNm2" prefWidth="180.0" text="제공표준 데이터셋 명" />
+                                       <TableColumn fx:id="offerOrganName2" prefWidth="200.0" text="제공기관" />
+                                       <TableColumn fx:id="fileSelect2" prefWidth="80.0" text="선택" />
+                                   </columns>
+                               </TableView>
+                   </VBox>
+               </children>
+           </HBox>
+       </center>
+   </BorderPane>
+   </children>
+ </AnchorPane>

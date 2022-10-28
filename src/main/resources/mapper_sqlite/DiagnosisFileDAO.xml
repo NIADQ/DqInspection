@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="application.wisefile.dao.DiagnosisFileDAO">
+
+    <select id="selectFileList" parameterType="Map" resultType="Map">
+		select file_id as fileId, file_name as fileNm, column_count as columnCount, seq, offer_organ_name offerOrganName
+		  from files
+		 order by seq asc
+	</select>
+
+	<select id="selectHistoryList" parameterType="Map" resultType="Map">
+		select history_id historyId, created_at createdAt from history order by createdAt desc
+	</select>
+
+	<select id="selectOrganName" resultType="Map">
+		select organ_name organName, fixed_file_path  fixedFilePath from setting
+	</select>
+
+	<update id="updateOrganName">
+		update setting set organ_name = #{organName, jdbcType=VARCHAR}, fixed_file_path = #{fixedFilePath, jdbcType=VARCHAR}, updated_at = datetime('now')
+	</update>
+
+
+	<delete id="deleteHistory" parameterType="Map">
+		DELETE FROM history WHERE history_id = #{historyId,jdbcType=VARCHAR}
+	</delete>
+
+	<delete id="deleteDiagHistory" parameterType="Map">
+		DELETE FROM diagnosis_history WHERE history_id = #{historyId,jdbcType=VARCHAR}
+	</delete>
+
+	<delete id="deleteDiagResult" parameterType="Map">
+		DELETE FROM diagnosis_result WHERE history_id = #{historyId,jdbcType=VARCHAR};
+	</delete>
+
+	<delete id="deleteFileHistory" parameterType="Map">
+		DELETE FROM file_history WHERE history_id = #{historyId,jdbcType=VARCHAR};
+	</delete>
+
+	<delete id="deleteFixedHistory" parameterType="Map">
+		DELETE FROM fixed_history WHERE history_id = #{historyId,jdbcType=VARCHAR};
+	</delete>
+
+
+
+	<update id="updateNextHistoryId">
+		update sq_history set seq = seq + 1 where name = 'sq_history'
+	</update>
+
+	<select id="selectNextHistoryId" resultType="java.lang.Long">
+		select seq from  sq_history
+	</select>
+
+	<insert id="insertFileHistory" parameterType="Map">
+		insert into file_history (id, history_id, file_id, file_type, file_path, file_name, status, error_yn, fixed_file, created_at)
+		select IFNULL(MAX(id), 0)  + 1 id, #{historyId,jdbcType=VARCHAR}, #{fileId,jdbcType=VARCHAR}, #{fileType,jdbcType=VARCHAR}, #{filePath,jdbcType=VARCHAR}
+			   , #{fileName,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}, #{errorYn,jdbcType=VARCHAR}, #{fixedFile,jdbcType=VARCHAR}, datetime('now') from file_history
+	</insert>
+
+	<insert id="insertHistory" parameterType="Map">
+		insert into history (history_id, created_at)
+		values ( #{historyId,jdbcType=VARCHAR}, datetime('now'))
+	</insert>
+
+</mapper>

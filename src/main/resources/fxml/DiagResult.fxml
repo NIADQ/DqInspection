@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="569.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.wisefile.controller.DiagnosisResultController">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <TableView fx:id="diagResultTable" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <ButtonBar prefHeight="30.0" BorderPane.alignment="CENTER">
+               <buttons>
+                  <Button fx:id="repairResultBtn" mnemonicParsing="false" onAction="#goRepairResultPage" text="정비결과" />
+                  <Button fx:id="diagHistoryBtn" mnemonicParsing="false" onAction="#goDiagHistoryPage" text="진단이력" />
+               </buttons>
+            </ButtonBar>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

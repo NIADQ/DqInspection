@@ -1,0 +1,25 @@
+.diagDialog{
+-fx-background-color:#FFFAFA;  /* 본문안내 */ 
+-fx-font-family:NanumGothicExtraBold;
+}
+.diagDialog > *.button-bar > *.container{
+-fx-background-color:#FFFAFA; /* 버튼 초록(녹색)*/ 
+-fx-font-family: NanumGothicExtraBold ;
+}
+.diagDialog > *.label.content{
+-fx-font-size: 14px;
+-fx-font-weight: bold;
+-fx-text-fill:black;
+-fx-font-family: NanumGothic ;
+
+}
+.diagDialog:header *.header-panel{
+-fx-background-color:#FFFFE0; /* 헤더 타이틀 황녹색 */ 
+-fx-font-family: NanumGothicExtraBold ;
+-fx-border-color:gray; -fx-border-width:0.3px;
+}
+.diagDialog:header *.header-panel *.label{
+-fx-font-size: 18px;
+-fx-font-style: italic;
+-fx-font-family: NanumGothicExtraBold ; 
+}

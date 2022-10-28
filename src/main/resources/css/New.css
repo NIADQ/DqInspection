@@ -1,0 +1,417 @@
+#lblCnt{
+-fx-text-fill:white;
+-fx-padding:4px;
+-fx-background-color: orange;
+-fx-font-size:12px;
+}
+#lvlOpenFileld{
+-fx-text-fill:white;
+-fx-padding:1px;
+}
+#lvlTotalRowCnt{
+-fx-text-fill:white;
+-fx-padding:1px;
+-fx-font-size:12px;
+}
+#lvlTotalColCnt{
+-fx-text-fill:white;
+-fx-padding:1px;
+-fx-font-size:12px;
+}
+#lblRowCntVal{
+-fx-text-fill:black;
+-fx-padding:1px;
+-fx-font-weight: bold;
+}
+
+#listBoxMain{
+-fx-text-fill:red;
+-fx-padding:1px;
+-fx-font-weight: bold;
+}
+#lvlHeaderLine{
+-fx-text-fill:white;
+-fx-padding:1px;
+}
+#largeBtn{
+-fx-color:black;
+-fx-padding:14px;
+-fx-background-color: #2E9AFE;
+-fx-background-radius: 10px;
+-fx-font-weight: bold;
+}
+#lvlTotalRowCnt{
+-fx-text-fill:white;
+-fx-padding:1px;
+
+}
+#lvlTotalColCnt{
+-fx-text-fill:white;
+-fx-padding:1px;
+}
+#apRepairLvl{
+-fx-text-fill:white;
+-fx-color:black;
+-fx-background-color: #FFFFFF;
+-fx-font-family: NanumGothicExtraBold ;
+-fx-font-size:14px;  
+}
+#lvlInfo1{
+-fx-text-fill:black;
+-fx-font-family: NanumGothicExtraBold ;
+-fx-font-size:14px;  
+}
+#lvlInfo2{
+-fx-text-fill:black;
+-fx-font-family: NanumGothicExtraBold ;
+-fx-font-size:12px;  
+}
+#lvlInfo3{
+-fx-text-fill:black;
+-fx-font-family: NanumGothicExtraBold ;
+-fx-font-size:12px;  
+}
+#lvlInfo4{
+-fx-text-fill:black;
+-fx-font-family: NanumGothicExtraBold ;
+-fx-font-size:12px;  
+}
+#lvlInfo5{
+-fx-text-fill:black;
+-fx-font-family: NanumGothicExtraBold ;
+-fx-font-size:12px;  
+}
+#lvlInfo6{
+-fx-text-fill:black;
+-fx-font-family: NanumGothicExtraBold ;
+-fx-font-size:12px;  
+}
+#lvlDownCng{
+-fx-color:black;
+-fx-font-family: NanumGothic ;
+-fx-font-size:10px;  
+-fx-border-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-color: linear-gradient(#FFFFFF, #CCCCCC);
+-fx-background-radius: 5px;
+}
+#lvlDownNotCng{
+-fx-color:black;
+-fx-font-family: NanumGothic ;
+-fx-font-size:10px;  
+-fx-border-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-color: linear-gradient(#FFFFFF, #CCCCCC);
+-fx-background-radius: 5px;
+}
+#btnBrowser{
+-fx-color:black;
+-fx-font-family: NanumGothic ;
+-fx-font-size:12px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#btnStart{
+-fx-color:black;
+-fx-font-family: NanumGothic;
+-fx-font-size:12px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#btnRecommandStd{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:12px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#btnRecommandPtn{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:12px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+
+#btnDownNotCng{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:12px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#btnDownCng{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:12px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#tMbt{
+-fx-color:black;
+-fx-font-family: NanumGothic;
+-fx-font-size:12px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+
+
+#apRepairLvl{
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:12px;  
+-fx-text-fill:blue;
+-fx-font-weight: bold;
+}
+#apFileLvl{
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:12px;  
+-fx-text-fill:blue;
+-fx-font-weight: bold;
+}
+#LvlErrorInfoList{
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:12px;  
+-fx-text-fill:blue;
+-fx-font-weight: bold;
+}
+#LvlErrorCommInfo{
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:10px;  
+-fx-text-fill:red;
+-fx-font-weight: bold;
+}
+#lvlInspectIng{
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:18px;  
+-fx-text-fill:blue;
+-fx-font-weight: bold;
+}
+#lvlRepairIng{
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:18px;  
+-fx-text-fill:blue;
+-fx-font-weight: bold;
+}
+
+#btnInspection{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:13px;  
+-fx-background-radius: 5px;
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+}
+#btnPattern{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:14px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#btnReport{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:13px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#btnRestart{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:14px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#btnConfig{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:14px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#btnRepair{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:13px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#btnRepairSave{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:12px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 2px;
+}
+#btnInit{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:10px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}
+#largeBtn:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+#txtOpenFileld{
+-fx-color:black;
+-fx-font-family: NanumGothic;
+-fx-font-size:10px;
+}
+#allBtn{
+-fx-color:black;
+-fx-padding:4px;
+-fx-background-color: #2E9AFE;
+-fx-background-radius: 5px;
+}
+#allBtn:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+#confirmBtn{
+-fx-color:black;
+-fx-padding:7px;
+-fx-background-color: #2E9AFE;
+-fx-background-radius: 5px;
+}
+#confirmBtn:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+#cancelBtn{
+-fx-color:black;
+-fx-padding:7px;
+-fx-background-color: #646464;
+-fx-background-radius: 5px;
+}
+#cancelBtn:hover {
+    -fx-background-color: linear-gradient(#3c3c3c, #505050);
+}
+
+
+
+.combo-box-base {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, white;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+}
+
+.myclass
+{
+    -fx-text-fill: gray;
+    -fx-padding:4px;
+    -fx-border-color: gray;
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+}
+
+.myOrg{
+	-fx-text-fill :rgb(0,128,0);
+}
+
+.myCng{
+	-fx-text-fill :rgb(0,0,255);
+}
+
+#listBoxMain .list-cell{
+	-fx-text-fill: red;
+	-fx-font-family: NanumGothicExtraBold ;
+	-fx-font-weight: Bold;
+}
+/*
+.list-cell:even { // * <=== changed to even * / 
+    -fx-background-color: gray;
+    -fx-font-weight: bold;
+}
+*/
+
+.table-view .table-column{
+    -fx-alignment:center;
+}
+/*KoPubWorld Dotum Light */
+.table-view .table-cell{
+	-fx-font-family: NanumGothic ;
+    /*-fx-font-weight:bold;*/
+    -fx-font-size:10px;           
+    /* -fx-text-fill:orange; */
+
+}
+
+#tvFileData{
+-fx-text-fill:red;
+-fx-font-family: NanumGothic;	
+-fx-alignment:center-left;
+-fx-font-size:10px;
+}
+#diagResult{
+-fx-text-fill:red;
+-fx-font-family: NanumGothicExtraBold;	
+-fx-alignment:center-left;
+-fx-font-size:10px;
+}
+
+#formatExample{
+-fx-text-fill:blue;
+-fx-font-family: NanumGothicExtraBold;	
+-fx-alignment:center-left;
+-fx-font-size:10px;
+}
+
+.combo-box.center-aligned>.list-cell {
+    -fx-alignment: center;
+}
+
+.combo-box>.list-cell {
+    -fx-alignment: center;
+}
+
+
+.progress-bar > .bar {
+    -fx-background-color: linear-gradient(
+        from 0px .75em to .75em 0px,
+        repeat,
+        -fx-accent 0%,
+        -fx-accent 49%,
+        derive(-fx-accent, 30%) 50%,
+        derive(-fx-accent, 30%) 99%
+    );
+}
+
+
+
+
+
+#title{
+    -fx-font-family: "나눔고딕";
+    -fx-font-weight: bold;
+    -fx-font-size: 14
+}
+
+
+#txtCplInclude{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:14px;  
+}
+
+#txtCplExpt{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:14px;  
+}
+
+#txtCplFlg{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:14px;  
+}
+#txtCplSelect{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:14px;  
+}
+
+#btnSave{
+-fx-color:black;
+-fx-font-family: NanumGothicExtraBold;
+-fx-font-size:12px;  
+-fx-background-color: linear-gradient(#2E9AFE, #2A5058);
+-fx-background-radius: 5px;
+}

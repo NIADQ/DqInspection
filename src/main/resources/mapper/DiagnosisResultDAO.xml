@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="application.wisefile.dao.DiagnosisResultDAO">
+
+	<select id="selectDaigResultList" parameterType="Map" resultType="Map">
+		SELECT * from diagnosis.diagnosis_result where history_id = #{historyId}  
+	</select>
+	<select id="selectDaigResultColumn" parameterType="Map" resultType="Map">
+		SELECT column_name as colNm from diagnosis.rule_set where file_id = (select file_id from diagnosis.file_history where history_id = #{historyId} LIMIT 1) order by column_idx 
+	</select>
+	
+	<select id="selectDaigResultColumnUnit" parameterType="Map" resultType="Map">
+		SELECT column_unit as columnUnit from diagnosis.rule_set where file_id = (select file_id from diagnosis.file_history where history_id = #{historyId} LIMIT 1) order by column_idx 
+	</select>
+
+</mapper>
